@@ -30,24 +30,6 @@ public class I_O {
 		    }
 	}
 	
-	public static void writeFile(String path)
-	{
-		try {
-			System.out.println("Now write what you want in the file: ");
-			BufferedWriter bw = new BufferedWriter(new FileWriter(path));
-			Scanner i = new Scanner(System.in);
-			String input = i.nextLine();
-			bw.write(input);
-			bw.close();
-			System.out.println("Successfully wrote to the file.");
-		}
-		catch(Exception e) 
-		{
-			 System.out.println("An error occurred.");
-			 e.printStackTrace();
-		}
-	}
-	
 	public static void readFile(String path)
 
 	{

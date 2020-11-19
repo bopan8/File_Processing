@@ -18,11 +18,10 @@ public class App {
 		I_O.createFileCheck(path);
 		System.out.println("				");
 		System.out.println("Choose: ");
-		System.out.println("1. Writing in the file ");
-		System.out.println("2. Reading the file ");
-		System.out.println("3. Switching two lines");
-		System.out.println("4. Switching two words ");
-		System.out.println("5. Quit ");
+		System.out.println("1. Reading the file");
+		System.out.println("2. Switching two lines ");
+		System.out.println("3. Switching two word ");
+		System.out.println("4. Quit");
 		Scanner ch = new Scanner(System.in);
 		int choose = ch.nextInt();
 		
@@ -32,14 +31,10 @@ public class App {
 				switch(choose)
 				{
 				case 1:
-					I_O.writeFile(path);
-					break;
-					
-				case 2:
 					I_O.readFile(path);
 					break;
 					
-				case 3:
+				case 2:
 					HashMap map = null;
 					try {
 						map = CreatingHashMap.createMap(path);
@@ -49,7 +44,7 @@ public class App {
 					SwitchingLines.switchLines(map, path);
 					break;
 					
-				case 4:
+				case 3:
 					HashMap mAp = null;
 					try {
 						mAp = CreatingHashMap.createMap(path);
@@ -64,15 +59,14 @@ public class App {
 			}
 		System.out.println("				");
 		System.out.println("Choose: ");
-		System.out.println("1. Writing in the file ");
-		System.out.println("2. Reading the file ");
-		System.out.println("3. Switching two lines");
-		System.out.println("4. Switching two words ");
-		System.out.println("5. Quit ");
+		System.out.println("1. Reading the file");
+		System.out.println("2. Switching two lines ");
+		System.out.println("3. Switching two word ");
+		System.out.println("4. Quit");
 		choose = ch.nextInt();
 		}
 		
-		if(choose == 5) 
+		if(choose == 4) 
 		{
 			System.out.println("Goodbye");
 		}
