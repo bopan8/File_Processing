@@ -25,7 +25,7 @@ public class App {
 		Scanner ch = new Scanner(System.in);
 		int choose = ch.nextInt();
 		
-		while (choose > 0 && choose <5)
+		while (choose > 0 && choose <4)
 		{
 			try {
 				switch(choose)
